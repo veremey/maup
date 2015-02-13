@@ -1007,7 +1007,7 @@ p{
     margin: 35px auto;
 }
 .tab__wrap p{
-    font: 15px/18px Ubuntu, Arial, sans-serif;
+    font: 15px/18px Arial, sans-serif;
     /*font-weight: 600;*/
 }
 .tab__wrap:after{
@@ -1023,7 +1023,7 @@ p{
 .profesion__item{
     position: relative;
     margin: 0 0 4px 20px;
-    font: 14px/20px Ubuntu, Arial, sans-serif;
+    font: 14px/20px Arial, sans-serif;
     /*font-weight: 600;*/
     color: #2a2a2a;
     text-decoration: none;
