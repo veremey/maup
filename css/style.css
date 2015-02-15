@@ -233,7 +233,13 @@ p{
 .slideshow li{
     background: #4db5f4;
     color: #fff;
-    font: 21px/27px 'Ubuntu', Arial, Helvetica, sans-srtif;
+    font: 21px/27px 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+.band__photo__slide .slideshow li{
+    background-color: #FFF;
+    color: #2A2A2A;
+    font: 13px/16px Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #D9D9D9;
 }
 .slideshow .img-holder{
     float: left;
@@ -246,6 +252,17 @@ p{
     padding: 30px 30px 20px;
     position: relative;
 }
+.band__photo__slide .text-holder{
+    width: 360px;
+    height: 90px;
+    display: block;
+    text-align: left;
+    padding: 9px 0 0;
+}
+.band__photo__slide .text-holder:before{
+    content: "";
+    display: none;
+}
 .slideshow .text-holder:before{
     position: absolute;
     width: 40px;
@@ -255,6 +272,12 @@ p{
     background: url("../images/slider-decor.png") no-repeat;
     content: '';
 }
+.band__photo__slide .slideshow .bx-viewport{
+    height: auto !important;
+}
+.band__photo__slide + .soc__share{
+    margin-top: 20px;
+}
 .slideshow .text-holder p{
     margin: 0;
     text-align: left;
@@ -262,6 +285,37 @@ p{
 .slideshow li img{
     vertical-align: top;
 }
+.band__photo__slide .bx-controls{
+    width: 100px;
+    float: right;
+}
+.band__photo__slide .bx-pager-link{
+    display: none !important;
+}
+.band__photo__slide .bx-prev,
+.band__photo__slide .bx-next{
+    background-color: #0064B4;
+    width: 40px;
+    height: 40px;
+    margin: -30px 0 -30px 9px;
+}
+.band__photo__slide .bx-prev:hover,
+.band__photo__slide .bx-next:hover{
+    background-color: #0B456C;
+}
+.band__photo__slide .bx-controls-direction a.bx-prev{
+    display: inline-block;
+    left: 0px;
+    background-position: 50% 50%;
+    background-image: url("../images/prev.png");
+}
+.band__photo__slide .bx-controls-direction a.bx-next{
+    left: 50px;
+    display: inline-block;
+    background-image: url("../images/next.png");
+    background-position: 50% 50%;
+}
+
 .bx-pager .bx-pager-item{
     display: inline-block;
     margin: 2px 5px;
@@ -834,6 +888,9 @@ p{
     float: left;
     width: 200px;
     margin: 13px 40px 0 0;
+}
+.content__band_text{
+    padding: 20px 0 30px !important;
 }
 .content p{
     padding: 0 0 15px;
