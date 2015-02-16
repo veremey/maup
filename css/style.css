@@ -249,7 +249,7 @@ p{
 }
 .slideshow .img-holder img{
 	width: 100%;
-	height: 350px;
+	height: 350px !important;
 }
 .slideshow .text-holder{
 	float: left;
@@ -1170,7 +1170,7 @@ p{
 	border-bottom: 1px solid #0064b4;
 }
 .content__small_title{
-	font:16px/12px Ubuntu, Arial, sans-serif;
+	font:16px/18px Ubuntu, Arial, sans-serif;
 	font-weight: 600;
 	color: #49494A;
 	margin-bottom: 20px;
@@ -1611,6 +1611,27 @@ p{
 		top:0;
 		background-position: 10px 40%;
 	}
+	.band__photo__slide .bx-controls{
+		width: 100%;
+	}
+	.band__photo__slide .text-holder{
+		height: auto;
+	}
+	.band__photo__slide .bx-controls-direction a.bx-prev,
+	.band__photo__slide .bx-controls-direction a.bx-next {
+		height: 350px !important;
+		margin: 0 !important;
+		background-color: rgba(0,0,0, .7);
+		opacity: .5;
+	}
+	.band__photo__slide .bx-controls-direction a.bx-prev:hover,
+	.band__photo__slide .bx-controls-direction a.bx-next:hover{
+		opacity: 1;
+	}
+	.band__photo__slide .bx-controls-direction a.bx-next {
+		left: 94%;
+		padding-left: 4px;
+	}
 	.bx-controls-direction a.bx-next {
 		right:0;
 		width:40px;
@@ -1618,6 +1639,7 @@ p{
 		top:0;
 		background-position: -33px 40%;
 	}
+
 	.heading {
 		height: 680px;
 	}
@@ -1627,9 +1649,15 @@ p{
 		float: none;
 		width:auto;
 	}
+	.fl{
+		float: none !important;
+		clear: both;
+		width: 100% !important;
+	}
 	.sidebar {
 		float: none;
-		width:auto;
+		clear: both;
+		width:100% !important;
 		margin: 0;
 	}
 	.info.left-indent {
@@ -1999,9 +2027,7 @@ p{
 	}
 	.content__menu li{
 		display: inline-block;
-		border: 3px solid #0096f0;
-		width: 250px;
-		margin: 5px;
+		margin: 0px;
 	}
 	.value__year{
 		width: 100%;
@@ -2012,6 +2038,27 @@ p{
 	}
 }
 
+
+@media screen and (max-width: 640px) {
+	.media__item,
+	.media_content,
+	.media__text{
+		float: none;
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+@media screen and (max-width: 585px){
+	.content__menu-nav{
+		border-bottom: none;
+	}
+	.content__menu-tab__item{
+		display: inline-block;
+		width: 40%;
+		margin: 10px 5px !important;
+	}
+}
 
 @media screen and (max-width: 460px) {
 	.info {
@@ -2029,5 +2076,14 @@ p{
 	}
 	.sidebar.white img {
 		width: 47%;
+	}
+	.content__menu-tab__item{
+		display: block !important;
+		width: 100% !important;
+		margin: 5px 0 !important;
+	}
+	.content__menu-tab__item a{
+		width: 100%;
+		margin: 0;
 	}
 }
