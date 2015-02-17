@@ -898,6 +898,7 @@ p{
 }
 .content__band_text{
 	padding: 20px 0 30px !important;
+	text-align: justify;
 }
 .content p{
 	padding: 0 0 15px;
@@ -1414,7 +1415,9 @@ p{
 	height: 400px;
 	margin-bottom: -5px;
 }
-
+.correct{
+	margin-top: 52px !important;
+}
 
 
 
@@ -2034,7 +2037,7 @@ p{
 		margin: 15px;
 	}
 	.value__year:first-child{
-		margin: 15px;
+		margin: 15px 0;
 	}
 }
 
