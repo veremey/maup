@@ -1493,12 +1493,47 @@ p{
 	clear: both;
 	*zoom: 1;
 }
-
-
-
-
-
-
+.logo__link{
+	float: left;
+}
+.logo__link span{
+	display: inline-block;
+	font: 7px/9px Arial, sans-serif;
+	color: #80B1D9;
+	text-decoration: none;
+}
+.searching{
+	float: left;
+	width: 450px;
+	height: 40px;
+	border: none;
+	padding-left: 10px;
+	line-height: 40px;
+}
+.searching__sabmit{
+	text-indent: -9999px;
+	background: url("../images/btns-mobile.png") -120px 0 no-repeat;
+	background-color: #004682;
+	float: left;
+	width: 40px;
+	height: 40px;
+	border: 0;
+	margin: 0 0 0 -30px;
+	cursor: pointer;
+	outline: none;
+}
+.searching__title{
+	height: 85px;
+	border-bottom: 1px dashed #d9d9d9;
+}
+.paragraph{
+	margin: 15px 0 20px;
+}
+.is-selected{
+	background-color: #FFC864;
+	padding: 4px;
+	margin-right: 3px;
+}
 
 
 
