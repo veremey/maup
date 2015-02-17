@@ -1028,6 +1028,8 @@ p{
 	margin-top: 25px;
 	top: 2px;
 	z-index: 4;
+	float: left;
+	padding-right: 20px;
 }
 .content__menu-nav li:first-child a{
 	margin-left: 0;
@@ -1486,7 +1488,11 @@ p{
 	margin-top: 77px !important;
 }
 
-
+.clear{
+	display: table;
+	clear: both;
+	*zoom: 1;
+}
 
 
 
@@ -2122,12 +2128,17 @@ p{
 }
 @media screen and (max-width: 585px){
 	.content__menu-nav{
-		border-bottom: none;
+		width: 100%;
 	}
+
 	.content__menu-tab__item{
 		display: inline-block;
-		width: 40%;
-		margin: 10px 5px !important;
+		width: 30% !important;
+		text-align: center;
+		margin: 0 !important;
+	}
+	.nav2 > .content__menu-tab__item{
+		width: 48% !important;
 	}
 }
 
@@ -2148,6 +2159,14 @@ p{
 	.sidebar.white img {
 		width: 47%;
 	}
+	.content__menu-nav{
+		border: none;
+		margin: 0;
+	}
+	.nav2{
+		margin-top: -5px;
+	}
+	.nav2 .content__menu-tab__item,
 	.content__menu-tab__item{
 		display: block !important;
 		width: 100% !important;
@@ -2156,5 +2175,6 @@ p{
 	.content__menu-tab__item a{
 		width: 100%;
 		margin: 0;
+		padding-bottom: 10px;
 	}
 }
