@@ -1043,9 +1043,9 @@ p{
 	height: 40px;
 }
 .content__menu-nav li.is-active a{
-	font-weight: 700;
+	padding-bottom: 10px;
 	color: #0096F0;
-	border-bottom: 5px solid #0096f0;
+	border-bottom: 3px solid #0096f0;
 }
 .content__menu-link{
 	display: inline-block;
@@ -1503,13 +1503,16 @@ p{
 	text-decoration: none;
 }
 .searching__head{
-	height: 90px !important;
+	height: 140px;
 	margin-bottom: -24px;
+	background-color: #0664b4;
+	/*padding: 20px;*/
 }
 .searching{
 	position: relative;
 	display: inline-block;
 	margin-top: -10px;
+	padding-left: 20px;
 }
 .searching__inp{
 	float: left;
@@ -1883,6 +1886,7 @@ p{
 	}
 	.header {
 		padding: 25px 0 12px;
+		min-width: 310px;
 	}
 	.slideshow {
 		bottom:0;
@@ -2160,7 +2164,7 @@ p{
 	}
 	.content__menu{
 		border-bottom: none;
-		text-align: center;
+		/*text-align: center;*/
 	}
 	.content__menu li{
 		display: inline-block;
@@ -2168,7 +2172,7 @@ p{
 	}
 	.value__year{
 		width: 100%;
-		margin: 15px;
+		margin: 15px 0;
 	}
 	.value__year:first-child{
 		margin: 15px 0;
@@ -2186,11 +2190,18 @@ p{
 		height: auto;
 	}
 }
+@media screen and (max-width: 605px){
+	.content__menu-nav li.is-active a{
+		padding-bottom: 0;
+	}
+}
 @media screen and (max-width: 585px){
 	.content__menu-nav{
 		width: 100%;
 	}
-
+	.searching__inp{
+		width: 300px
+	}
 	.content__menu-tab__item{
 		display: inline-block;
 		text-align: center;
@@ -2235,5 +2246,10 @@ p{
 		width: 100%;
 		margin: 0;
 		padding-bottom: 10px;
+	}
+}
+@media screen and (max-width: 460px) {
+	.searching__inp{
+		width: 230px;
 	}
 }
