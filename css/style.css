@@ -1236,9 +1236,14 @@ p{
 	color: #3A709E !important;
 	border-bottom: 1px dotted #3A709E !important;
 }
-
 .border{
 	border-top: 1px dashed #d9d9d9;
+}
+.border__top{
+	border-top: 1px solid #d9d9d9;
+}
+.border__top > .content__menu-nav{
+	margin-top: 7px;
 }
 .media:after{
 	content: "";
@@ -1562,14 +1567,77 @@ p{
 	padding: 4px;
 	margin-right: 3px;
 }
-
-
-
-
-
-
-
-
+.date__item{
+	height: 60px;
+	margin-bottom: 15px;
+}
+.date__item:after{
+	display: table;
+	clear: both;
+	*zoom: 1;
+}
+.date__blue,
+.date__yellow,
+.date__red{
+	position: relative;
+	float: left;
+	color: #FFF;
+	width: 150px;
+	height: 60px;
+}
+.date__blue{
+	background-image: url("../images/bg_date_blue.png");
+}
+.date__yellow{
+	background-image: url("../images/bg_date_y.png");
+}
+.date__red{
+	background-image: url("../images/bg_date_red.png");
+}
+.date__number{
+	font: 34px/50px Arial, sans-serif;
+	font-weight: 600;
+	color: #FFF;
+	float: left;
+	width: 50px;
+	text-align: center;
+}
+.date__day{
+	font: 14px Arial, sans-serif;
+	font-weight: 600;
+	line-height: 15px;
+	margin-top: 9px;
+}
+.date__day span{
+	font: 13px Arial, sans-serif;
+	font-weight: 500;
+}
+.date__time{
+	font: 13px/18px Arial, sans-serif;
+	color: #808080;
+	margin: 15px 0 0 5px;
+	float: left;
+}
+.media__text__small p{
+	position: relative;
+	display: inline;
+	font: 14px/20px Arial, sans-serif;
+	margin: 15px 0 4px;
+	color: #2a2a2a;
+	max-height: 80px;
+}
+.media__text__small a {
+	position: absolute;
+	bottom: 18px;
+	right: -25px;
+	color: #447ebf;
+	font-size: 17px;
+	text-decoration: none;
+	border-bottom: 1px dotted #447EBF;
+}
+.media__text__small a:hover{
+	border-bottom-color: transparent;
+}
 
 
 
