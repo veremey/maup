@@ -235,6 +235,12 @@ p{
 	color: #fff;
 	font: 21px/27px 'Ubuntu', Arial, Helvetica, sans-serif;
 }
+.band__photo__slide{
+	margin-top: 15px;
+}
+.band__photo__slide .slideshow{
+	bottom: 0;
+}
 .band__photo__slide .slideshow li{
 	background-color: #FFF;
 	color: #2A2A2A;
@@ -485,7 +491,12 @@ p{
 .content{
 	float: left;
 	width:620px;
-	overflow: hidden;
+	/*overflow: hidden;*/
+}
+.content:after{
+	content: " ";
+	display: table;
+	clear: both;
 }
 .divide{
 	border-top: 1px solid #80b1d9;
@@ -903,12 +914,17 @@ p{
 .content__band_text{
 	padding: 16px 0 22px !important;
 	text-align: justify;
+	font: 13px/16px Arial, sans-serif;
+	border-bottom: 1px solid #d9d9d9;
 }
 .content__band_text + .date{
 	margin: 0 !important;
 }
+.content__band_text + .soc__share{
+	border-top: 0px solid #fff;
+}
 .content p{
-	padding: 0 0 15px;
+	margin: 5px 0 10px;
 }
 .article-title{
 	font: bold 28px/31px Ubuntu, Arial, Helvetica, sans-serif;
@@ -932,8 +948,8 @@ p{
 }
 .sidebar.inner .info-box a,
 .info-wrap-link{
-	color: #3383c3;
-	border-bottom: 1px dotted #3383c3;
+	color: #0064b4;
+	border-bottom: 1px dotted #0064b4;
 	text-decoration: none;
 }
 .sidebar.inner .info-box a:hover,
@@ -991,9 +1007,9 @@ p{
 	border-bottom: 1px solid #e5e5e5;
 }
 .aside-menu-inner>li a{
-	color: #3383c3;
+	color: #0064b4;
 	text-decoration: none;
-	border-bottom: 1px dotted #3383c3;
+	border-bottom: 1px dotted #0064b4;
 }
 .aside-menu-inner>li a:hover{
 	border-bottom-style: solid;
@@ -1011,12 +1027,10 @@ p{
 	background: url("../images/yellow-arrow.png") no-repeat 0 5px;
 
 }
-/*.content__menu{
+.content__menu{
 	position: relative;
-	border-bottom: 1px solid #e5e5e5;
-	margin-top: 25px;
-	z-index: 1;
-}*/
+	margin-bottom: 25px;
+}
 .content__menu-nav:after{
 	content: " "
 	display: table
@@ -1025,8 +1039,8 @@ p{
 }
 .content__menu-nav{
 	position: relative;
+	width: 96%;
 	border-bottom: 1px solid #e5e5e5;
-	margin-top: 25px;
 	top: 2px;
 	z-index: 4;
 	float: left;
@@ -1083,9 +1097,11 @@ p{
 .tab__wrap{
 	margin: 35px auto;
 }
+.tab__wrap > .media__new:first-child{
+	padding: 0;
+}
 .tab__wrap p{
 	font: 15px/18px Arial, sans-serif;
-	/*font-weight: 600;*/
 }
 .tab__wrap:after{
 	content: "";
@@ -1187,15 +1203,16 @@ p{
 .content__small a{
 	color: #0064b4;
 	text-decoration: none;
+	border-bottom: 1px dashed #0064b4;
 }
 .content__small a:hover{
 	border-bottom: 1px solid #0064b4;
 }
 .content__small_title{
-	font: 16px/20px Arial, sans-serif;
+	font: 16px/22px Arial, sans-serif;
 	font-weight: 600;
 	color: #49494A;
-	margin:  10px 0 20px;
+	margin:  20px 0 10px;
 }
 .soc__share{
 	padding: 15px 0;
@@ -1236,14 +1253,12 @@ p{
 	color: #3A709E !important;
 	border-bottom: 1px dotted #3A709E !important;
 }
+
 .border{
 	border-top: 1px dashed #d9d9d9;
 }
-.border__top{
-	border-top: 1px solid #d9d9d9;
-}
-.border__top > .content__menu-nav{
-	margin-top: 7px;
+.border > p{
+	margin-top: 15px;
 }
 .media:after{
 	content: "";
@@ -1259,7 +1274,10 @@ p{
 	border-top: 0px dashed #d9d9d9;
 }
 .media__new:last-child{
-	border-bottom: 1px dashed #d9d9d9;
+	border-bottom: 1px dashed #d9d9d9 !important;
+}
+.b1{
+	border-bottom: 1px dashed #d9d9d9 !important;
 }
 .media__new:after{
 	content: "";
@@ -1323,15 +1341,16 @@ p{
 	position: relative;
 	width: 300px;
 	height: 100px;
+	padding-top: 5px;
 }
 .media__text a {
 	position: absolute;
-	bottom: 18px;
+	bottom: 3px;
 	right: -25px;
-	color: #447ebf;
+	color: #0064b4;
 	font-size: 17px;
 	text-decoration: none;
-	border-bottom: 1px dotted #447EBF;
+	border-bottom: 1px dotted #0064b4;
 }
 .media__text a:hover{
 	border-bottom-color: transparent;
@@ -1446,7 +1465,7 @@ p{
 	vertical-align: top;
 }
 .picture__label{
-	margin-bottom: 10px;
+	padding-bottom: 10px;
 	border-bottom: 1px solid #d9d9d9;
 }
 .sidebar__category{
@@ -1487,10 +1506,16 @@ p{
 	margin-bottom: -5px;
 }
 .correct{
-	margin-top: 52px !important;
+	margin-top: 40px !important;
 }
 .news__correct{
 	margin-top: 77px !important;
+}
+.news__glue{
+	margin-top: 0 !important;
+}
+.border__top{
+	border-top: 1px solid #cccccc;
 }
 .clear{
 	display: table;
@@ -1615,29 +1640,27 @@ p{
 .date__time{
 	font: 13px/18px Arial, sans-serif;
 	color: #808080;
-	margin: 15px 0 0 5px;
+	margin: 12px 0 0 5px;
 	float: left;
 }
-.media__text__small p{
-	position: relative;
-	display: inline;
+/*.event__date__time{
 	font: 14px/20px Arial, sans-serif;
-	margin: 15px 0 4px;
-	color: #2a2a2a;
-	max-height: 80px;
-}
-.media__text__small a {
-	position: absolute;
-	bottom: 18px;
-	right: -25px;
-	color: #447ebf;
-	font-size: 17px;
+	font-style: italic;
+}*/
+.info__link{
+	font: 14px/20px Arial, sans-serif;
+	color: #0064b4;
+	border-bottom: 1px dotted #0064b4;
 	text-decoration: none;
-	border-bottom: 1px dotted #447EBF;
 }
-.media__text__small a:hover{
-	border-bottom-color: transparent;
+.content a{
+	color: #0064b4;
+	text-decoration: none;
 }
+
+
+
+
 
 
 
@@ -1673,16 +1696,21 @@ p{
 }
 .accordion .opener {
 	display: inline-block;
-	padding: 11px 0 11px 50px;
+	padding: 11px 0 11px;
 	line-height: 16px;
 	font-weight: bold;
 	color: #0096f0;
 	text-decoration: none;
 }
-.accordion .opener span {
-	border-bottom: 1px dashed #0096f0;
+.accordion .opener span{
 	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	top: 10px;
+	left: 10px;
+	border-bottom: 1px dashed #0096f0;
 }
+
 .accordion .opener span:after {
 	clear: both;
 	position: absolute;
@@ -1701,9 +1729,9 @@ p{
 	-ms-transform: rotate(-180deg);
 	transform: rotate(-180deg);
 }
-.accordion .opener.icon01 {
+/*.accordion .opener.icon01 {
 	background: url(../images/icon01.png) 0 50% no-repeat;
-}
+}*/
 .accordion .opener.icon02 {
 	background: url(../images/icon02.png) 0 50% no-repeat;
 }
@@ -1747,9 +1775,14 @@ p{
 .accordion .slide ul li span {
 	border-bottom: 1px dotted #c0c0c0;
 }
+.slide a{
+	color: #0064b4;
+	text-decoration: none;
+	border-bottom: 1px dotted #0064b4;
+}
 .accordion .slide ul li:before {
 	content:"—";
-	color:#0096f0;
+	color:#0064b4;
 	position: absolute;
 	left:-20px;
 	top: 0px;
@@ -1985,7 +2018,7 @@ p{
 		width:auto;
 	}
 	.search-form input[type="text"] {
-		border-color:#3383c3;
+		border-color: #3783BF;
 		width:100%;
 		color:#fff;
 		box-sizing: border-box;
