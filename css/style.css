@@ -487,7 +487,6 @@ p{
 	font: bold 45px/50px Arial, Helvetica, sans-serif;
 	margin-top: -5px;
 }
-
 .content{
 	float: left;
 	width:620px;
@@ -558,7 +557,6 @@ p{
 	top:10px;
 	left:10px;
 }
-
 .info .img-holder{
 	margin-bottom: 16px;
 	display: block;
@@ -1112,7 +1110,6 @@ p{
 .profesion{
 	margin: 13px 0;
 }
-
 .profesion__item{
 	position: relative;
 	margin: 0 0 4px 20px;
@@ -1536,7 +1533,6 @@ p{
 	height: 140px;
 	margin-bottom: -24px;
 	background-color: #0664b4;
-	/*padding: 20px;*/
 }
 .searching{
 	position: relative;
@@ -1657,40 +1653,6 @@ p{
 	color: #0064b4;
 	text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-/* ------------------- */
-
-/* ------------------- */
-
-/* ------------------- */
-
-/* ------------------- */
-
-/* ------------------- */
-
-/* ------------------- */
-
-/* ------------------- */
 .accordion>li {
 	padding-bottom: 15px;
 }
@@ -1710,7 +1672,6 @@ p{
 	left: 10px;
 	border-bottom: 1px dashed #0096f0;
 }
-
 .accordion .opener span:after {
 	clear: both;
 	position: absolute;
@@ -1728,36 +1689,6 @@ p{
 	-o-transform: rotate(-180deg);
 	-ms-transform: rotate(-180deg);
 	transform: rotate(-180deg);
-}
-/*.accordion .opener.icon01 {
-	background: url(../images/icon01.png) 0 50% no-repeat;
-}*/
-.accordion .opener.icon02 {
-	background: url(../images/icon02.png) 0 50% no-repeat;
-}
-.accordion .opener.icon03 {
-	background: url(../images/icon03.png) 0 50% no-repeat;
-}
-.accordion .opener.icon04 {
-	background: url(../images/icon04.png) 0 50% no-repeat;
-}
-.accordion .opener.icon05 {
-	background: url(../images/icon05.png) 0 50% no-repeat;
-}
-.accordion .opener.icon06 {
-	background: url(../images/icon06.png) 0 50% no-repeat;
-}
-.accordion .opener.icon07 {
-	background: url(../images/icon07.png) 0 50% no-repeat;
-}
-.accordion .opener.icon08 {
-	background: url(../images/icon08.png) 0 50% no-repeat;
-}
-.accordion .opener.icon09 {
-	background: url(../images/icon09.png) 0 50% no-repeat;
-}
-.accordion .opener.icon10 {
-	background: url(../images/icon10.png) 0 50% no-repeat;
 }
 .accordion .slide {
 	padding-left: 70px;
