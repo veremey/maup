@@ -450,6 +450,9 @@ p{
 	color: #616262;
 	margin: 12px 0 8px; /* правка */
 }
+/*section .info-box:last-child{
+	padding-bottom: 0;
+}*/
 .sidebar .read-more{
 	border-top: 1px dashed #c8c8b4;
 	text-align: right;
@@ -901,7 +904,7 @@ p{
 	display: none;
 }
 .container.cam-wrap.inner{
-	margin-top: 50px;
+	margin-top: 60px;
 	padding-bottom: 60px;
 }
 .aside{
@@ -927,7 +930,7 @@ p{
 .article-title{
 	font: bold 28px/31px Ubuntu, Arial, Helvetica, sans-serif;
 	color: #0096f0;
-	margin: 0 0 15px;
+	margin: 0 0 20px;
 }
 .article-picture{
 	display: block;
@@ -939,7 +942,7 @@ p{
 }
 .sidebar.inner .chapter{
 	border-top-color: #960000;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 }
 .sidebar.inner .chapter .title{
 	font: 17px/22px Ubuntu, Arial, Helvetica, sans-serif;
@@ -969,9 +972,9 @@ p{
 	text-decoration: none;
 	display: block;
 	position: relative;
-	padding: 0 0 15px 20px;
+	padding: 0 0 20px 20px;
 	border-bottom: 1px solid #e5e5e5;
-	margin: 0 0 5px;
+	margin: 0 0 10px;
 }
 .aside-menu>li>a:after{
 	position: absolute;
@@ -1106,6 +1109,9 @@ p{
 	display: table;
 	clear: both;
 	*zoom: 1;
+}
+.tab__wrap .value{
+	margin: 25px 0 0;
 }
 .profesion{
 	margin: 13px 0;
@@ -1658,7 +1664,7 @@ p{
 }
 .accordion .opener {
 	display: inline-block;
-	padding: 11px 0 11px;
+	padding: 11px 0 7px;
 	line-height: 16px;
 	font-weight: bold;
 	color: #0096f0;
