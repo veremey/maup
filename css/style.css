@@ -190,9 +190,13 @@ p{
 }
 .heading{
 	background: #0064b4;
-	padding: 20px;
-	height: 390px;
+	padding: 20px 20px 0;
+	/*height: 390px;*/
 }
+/*.searching{
+	margin-top: 15px;
+	padding-left: 0;
+}*/
 .logo{
 	background: url("../images/logo.png") no-repeat;
 	width: 252px;
@@ -772,9 +776,9 @@ p{
 }
 
 /*about us*/
-.heading.inner{
+/*.heading.inner{
 	height: 140px;
-}
+}*/
 .heading.inner .logo{
 	float: right;
 	width: 185px;
@@ -820,10 +824,17 @@ p{
 .page-name{
 	color: #4db5f4;
 	font: 37px/1.1 Ubuntu, Arial, Helvetica, sans-serif;
-	margin: 0 0 20px;
+	/*margin: 0 0 20px;*/  /* server */
 }
 .inner-nav{
 	background: #0096f0;
+	-webkit-transform: translate(0, 25px);
+	   -moz-transform: translate(0, 25px);
+	    -ms-transform: translate(0, 25px);
+	     -o-transform: translate(0, 25px);
+	        transform: translate(0, 25px);
+	position: relative;
+	z-index: 5;
 }
 .inner-page-menu>li{
 	float: left;
@@ -955,7 +966,7 @@ p{
 }
 .sidebar.inner .info-box a:hover,
 .info-wrap-link:hover{
-	border-bottom-style: solid;
+	border-bottom-style: solid!important;
 }
 
 .decor-none{
@@ -1004,7 +1015,7 @@ p{
 }
 .aside-menu-inner>li{
 	margin: 0 20px;
-	padding: 10px 0;
+	padding: 7px 0;
 	border-bottom: 1px solid #e5e5e5;
 }
 .aside-menu-inner>li a{
@@ -1543,8 +1554,8 @@ p{
 .searching{
 	position: relative;
 	display: inline-block;
-	margin-top: -10px;
-	padding-left: 20px;
+	margin-top: 15px;
+	padding-left: 0px;
 }
 .searching__inp{
 	float: left;
@@ -1670,12 +1681,17 @@ p{
 	color: #0096f0;
 	text-decoration: none;
 }
+.accordion .opener img{
+	margin-right: 10px;
+	margin-top: 0px;
+	vertical-align: top;
+}
 .accordion .opener span{
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
 	top: 10px;
-	left: 10px;
+	left: 0px;
 	border-bottom: 1px dashed #0096f0;
 }
 .accordion .opener span:after {
@@ -1697,13 +1713,13 @@ p{
 	transform: rotate(-180deg);
 }
 .accordion .slide {
-	padding-left: 70px;
+	padding-left: 50px;
 	padding-bottom: 20px;
 	color:#333;
 	display: none;
 }
 .accordion .slide ul {
-	padding: 21px 0;
+	padding: 21px 0 21px 21px;
 }
 .accordion .slide ul li {
 	position: relative;
@@ -1717,6 +1733,9 @@ p{
 	text-decoration: none;
 	border-bottom: 1px dotted #0064b4;
 }
+.slide a:hover{
+	border-bottom: 1px solid #0064b4;
+}
 .accordion .slide ul li:before {
 	content:"—";
 	color:#0064b4;
@@ -1729,7 +1748,6 @@ p{
 	text-transform: lowercase;
 	border-bottom: 1px dashed #0096f0;
 	text-decoration: none;
-	margin-left: -20px;
 }
 .dropTitle {
 	display: none;
@@ -1818,14 +1836,10 @@ p{
 		background-position: -33px 40%;
 	}
 
-	.heading {
-		height: 680px;
-	}
 }
 @media screen and (max-width: 977px) {
 	.content {
-		float: none;
-		width:auto;
+		float: left;
 	}
 	.fl{
 		float: none !important;
@@ -1925,6 +1939,12 @@ p{
 	.header {
 		padding: 25px 0 12px;
 		min-width: 310px;
+	}
+	.searching{
+		position: relative;
+		display: inline-block;
+		margin-top: -10px;
+		padding-left: 20px;
 	}
 	.slideshow {
 		bottom:0;
@@ -2159,6 +2179,19 @@ p{
 		float: none;
 		text-align: center;
 		width:auto;
+	}
+	.inner-nav{
+		-webkit-transform: translate(0);
+		   -moz-transform: translate(0);
+		    -ms-transform: translate(0);
+		     -o-transform: translate(0);
+		        transform: translate(0);
+	}
+	.content{
+		float: none;
+		width: auto;
+		display: block;
+		margin: 0 10px;
 	}
 	.footer-logo {
 		margin: 0 auto 20px;
