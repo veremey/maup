@@ -370,7 +370,7 @@ p{
 	bottom: 30px;
 }
 .container.cam-wrap{
-	margin: 80px auto 0;
+	margin: 70px auto 0;
 }
 .container .title{
 	font: 21px/25px 'Ubuntu', Arial, Helvetica, sans-serif;
@@ -1795,7 +1795,7 @@ p{
 	}
 
 	.heading {
-		height: 680px;
+		height: 650px;
 	}
 }
 @media screen and (max-width: 977px) {
@@ -1899,7 +1899,7 @@ p{
 		height: auto;
 	}
 	.header {
-		padding: 25px 0 12px;
+		padding: 25px 20px 12px;
 		min-width: 310px;
 	}
 	.slideshow {
@@ -1914,6 +1914,7 @@ p{
 	}
 	.container.cam-wrap.inner {
 		padding-bottom: 40px;
+		margin-left: 20px;
 	}
 	.drop-section {
 		background:#0064b4;
