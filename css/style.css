@@ -230,6 +230,7 @@ p{
 	position: relative;
 	bottom: -20px;
 	z-index: 10;
+	background-color: #fff
 }
 .slideshow li{
 	background: #4db5f4;
@@ -1124,11 +1125,10 @@ p{
 	width: 10px;
 	background-color: #0096f0;
 }
-/*.profesion__link{
-	font:14px/20px Ubuntu, Arial, sans-serif;
-	color: #2a2a2a;
-	text-decoration: none;
-}*/
+.js-tab4 .value{
+	margin: 50px 0;
+}
+
 .value{
 	margin: 45px 0;
 }
@@ -1177,9 +1177,7 @@ p{
 	text-align: left;
 	font-weight: 600;
 }
-/*.value__pay{
-	float: right;
-}*/
+
 .content__small{
 	margin-bottom: 30px;
 }
@@ -1577,43 +1575,6 @@ p{
 	margin-right: 3px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-/* ------------------- */
-
-/* ------------------- */
-
-/* ------------------- */
-
-/* ------------------- */
-
-/* ------------------- */
-
-/* ------------------- */
-
-/* ------------------- */
 .accordion>li {
 	padding-bottom: 15px;
 }
@@ -1803,6 +1764,10 @@ p{
 		float: none;
 		width:auto;
 	}
+	.content-holder .content{
+		float: left;
+		width: 100%;
+	}
 	.fl{
 		float: none !important;
 		clear: both;
@@ -1821,6 +1786,12 @@ p{
 		margin-left: 12px;
 	}
 }
+@media screen and (max-width: 956px) {
+	.content-holder {
+		float: left;
+		width: 650px;
+	}
+}  /*04.03*/
 @media screen and (max-width: 952px) {
 	.log-in,
 	.search-btn,
@@ -1848,6 +1819,12 @@ p{
 		margin-left: 11px;
 	}
 }
+@media screen and (max-width: 908px) {
+	.content-holder {
+		float: left;
+		width: 600px;
+	}
+}  /*04.03*/
 @media screen and (max-width: 867px) {
 	.search-form,
 	.top-menu,
@@ -1899,9 +1876,12 @@ p{
 		height: auto;
 	}
 	.header {
-		padding: 25px 20px 12px;
+		padding: 25px 0px 12px;
 		min-width: 310px;
 	}
+	.cam-wrap{
+		margin: 0 20px;
+	} /* 04.03 */
 	.slideshow {
 		bottom:0;
 	}
