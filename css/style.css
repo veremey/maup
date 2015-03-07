@@ -1875,7 +1875,7 @@ p{
 		float: right;
 	}
 	.open-menu {
-		background-position: 0 0;
+		background: url(../images/menu_icon.png) no-repeat;
 		float: left;
 	}
 	.log-in a {
