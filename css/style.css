@@ -710,7 +710,7 @@ p{
 }
 .drop-section .cam-wrap {
 	position: relative;
-	padding: 30px 0;
+/*	padding: 30px 0;*/
 	overflow: hidden;
 }
 .drop-section ul {
@@ -1502,8 +1502,12 @@ p{
 .correct{
 	margin-top: 52px !important;
 }
-.news__correct{
+{
 	margin-top: 0px !important;
+}
+
+.js-tab-group + .news__correct{
+	margin-top: 15px !important;
 }
 .clear{
 	display: table;
@@ -1530,7 +1534,6 @@ p{
 	position: relative;
 	display: inline-block;
 	margin-top: -10px;
-	padding-left: 20px;
 }
 .searching__inp{
 	float: left;
@@ -1688,11 +1691,27 @@ p{
 	padding-bottom: 0;
 }
 
+#search-drop,
+#menu-mobile,
+#lang-mobile,
+#lang-mobile{
+	margin: 30px 0;
+}
+
+#language-drop,
+#about-academy,
+#maup-study{
+	margin: 30px 0;
+}
 
 
-
-
-
+#language-drop:after,
+#about-academy:after,
+#maup-study:after{
+	display: table;
+	clear: both;
+	content: "";
+}
 
 
 
@@ -1911,6 +1930,20 @@ p{
 	.dropTitle {
 		display: block;
 	}
+
+	#search-drop,
+	#menu-mobile,
+	#lang-mobile,
+	#lang-mobile{
+		margin: 0px ;
+	}
+
+	#language-drop,
+	#about-academy,
+	#maup-study{
+		margin: 0px ;
+	}
+
 	.search-btn:hover{
 		background-position: -120px -44px;
 	}
@@ -1990,6 +2023,9 @@ p{
 	}
 	.search-form input[type="submit"]:hover{
 		background-position: 0 0;
+	}
+	.searching{
+		padding-left: 20px;
 	}
 	.drop-section ul {
 		width:auto;
@@ -2316,6 +2352,11 @@ p{
 }
 @media screen and (max-width: 460px) {
 	.searching__inp{
-		width: 230px;
+		width: 200px;
+	}
+}
+@media screen and (max-width: 350px) {
+	.searching__inp{
+		width: 160px;
 	}
 }

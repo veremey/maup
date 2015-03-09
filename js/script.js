@@ -46,9 +46,9 @@ function initSlider() {
     }
 }
 $(document).ready(function() {
-    $('.mobile-heading .open').on('click', function(e) {
-            $(this).toggleClass('active');
-            $(this).parent().next('.inner-page-menu').toggleClass('active');
+    $('.mobile-heading').on('click', function(e) {
+            $(this).children('.open').toggleClass('active');
+            $(this).next('.inner-page-menu').toggleClass('active');
             e.preventDefault();
         })
 
