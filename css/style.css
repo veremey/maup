@@ -1598,6 +1598,7 @@ p{
 .accordion .opener span {
 	border-bottom: 1px dashed #0096f0;
 	position: relative;
+	display: inline;
 }
 .accordion .opener span:after {
 	clear: both;
@@ -2113,7 +2114,7 @@ p{
 		top:-1px;
 		left:100%;
 		width:100%;
-		display: block;
+		/*display: block;*/
 	}
 	.inner-page-menu>li .dropdown-menu li {
 		border-bottom: 1px solid #0064b4;
