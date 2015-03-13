@@ -1682,29 +1682,23 @@ p{
 	display: none;
 }
 
-
-
-
 .mb-5{
 	margin-bottom: -5px;
 }
 .pb0{
 	padding-bottom: 0;
 }
-
 #search-drop,
 #menu-mobile,
 #lang-mobile,
 #lang-mobile{
 	margin: 30px 0;
 }
-
 #language-drop,
 #about-academy,
 #maup-study{
 	margin: 30px 0;
 }
-
 
 #language-drop:after,
 #about-academy:after,
@@ -1713,49 +1707,6 @@ p{
 	clear: both;
 	content: "";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
