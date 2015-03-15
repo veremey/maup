@@ -841,7 +841,7 @@ p{
 	position: relative;
 	margin: 0 13px 0 0;
 }
-.has-drop>a>span:after{
+/*.has-drop>a>span:after{
 	position: absolute;
 	top: 6px;
 	right: -15px;
@@ -849,7 +849,7 @@ p{
 	width: 10px;
 	height: 5px;
 	content: '';
-}
+}*/
 .inner-page-menu li a:hover{
 	background: #004682;
 }
@@ -871,13 +871,23 @@ p{
 	width: 280px;
 	top:49px;
 	left:0;
-	padding-bottom: 10px;
+	/*padding-bottom: 10px;*/
+	-webkit-transition: ease-in-out left 1s;
+	 -moz-transition: ease-in-out left 1s;
+	  -ms-transition: ease-in-out left 1s;
+	   -o-transition: ease-in-out left 1s;
+	      transition: ease-in-out left 1s;
 }
 .inner-page-menu>li:hover .dropdown-menu{
 	display: block;
 }
 .inner-page-menu>li .dropdown-menu .dropdown-menu {
 	display: none;
+	-webkit-transition: ease-in-out left 1s;
+	 -moz-transition: ease-in-out left 1s;
+	  -ms-transition: ease-in-out left 1s;
+	   -o-transition: ease-in-out left 1s;
+	      transition: ease-in-out left 1s;
 }
 .inner-page-menu>li:hover>a{
 	background: #004682;
@@ -1682,23 +1692,29 @@ p{
 	display: none;
 }
 
+
+
+
 .mb-5{
 	margin-bottom: -5px;
 }
 .pb0{
 	padding-bottom: 0;
 }
+
 #search-drop,
 #menu-mobile,
 #lang-mobile,
 #lang-mobile{
 	margin: 30px 0;
 }
+
 #language-drop,
 #about-academy,
 #maup-study{
 	margin: 30px 0;
 }
+
 
 #language-drop:after,
 #about-academy:after,
@@ -1999,6 +2015,7 @@ p{
 	}
 	.page-name {
 		margin: 15px 20px;
+		height: 15px;
 		font-size: 20px;
 		line-height: 23px;
 	}
@@ -2038,7 +2055,7 @@ p{
 	.has-drop>a>span {
 		position: static;
 	}
-	.has-drop>a>span:after {
+/*	.has-drop>a>span:after {
 		top: 0;
 		right: 0px;
 		margin-top: 0;
@@ -2052,7 +2069,7 @@ p{
 		-ms-transform: rotate(-90deg);
 		transform: rotate(-90deg);
 	}
-	.dropdown-menu .has-drop>a>span:after {
+*/	.dropdown-menu .has-drop>a>span:after {
 		display: inline-block;
 	}
 	.inner-page-menu>li {
@@ -2066,6 +2083,11 @@ p{
 		left:100%;
 		width:100%;
 		/*display: block;*/
+		-webkit-transition: left 1s;
+		 -moz-transition: left 1s;
+		  -ms-transition: left 1s;
+		   -o-transition: left 1s;
+		      transition: left 1s;
 	}
 	.inner-page-menu>li .dropdown-menu li {
 		border-bottom: 1px solid #0064b4;
@@ -2103,6 +2125,7 @@ p{
 	.inner-page-menu>li .dropdown-menu li.back {
 		display: block;
 		padding: 16px 20px;
+		height: 15px;
 		background: #007ed6;
 	}
 	.inner-page-menu>li .dropdown-menu li.back span {
@@ -2114,7 +2137,8 @@ p{
 	}
 	.heading.inner {
 		margin-bottom: -28px;
-		height: 101px;
+		/*height: 101px;*/
+		height: 95px;
 	}
 	.content-holder {
 		width:auto;
@@ -2310,5 +2334,59 @@ p{
 @media screen and (max-width: 350px) {
 	.searching__inp{
 		width: 160px;
+	}
+}
+
+
+
+/*-------experement-----*/
+/*-------experement-----*/
+/*-------experement-----*/
+/*-------experement-----*/
+/*-------experement-----*/
+
+
+@media screen and (max-width: 867px){
+
+	.dropdown-menu{
+		display: none;
+	}
+	.has-drop > a{
+		margin-right: 51px;
+	}
+	.has-drop i{
+		float: right;
+		position: relative;
+		top: -50px;
+		width:50px;
+		height: 50px;
+		background-color: #007ed6;
+		background-position: 50% 50%;
+		-moz-transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+	}
+	.has-drop i:after{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		background: url("../images/arrow-yellow.gif") no-repeat;
+		width: 10px;
+		height: 5px;
+		content: '';
+	}
+	.left{
+		display: block!important;
+		left: 0%!important;
+	}
+	.right{
+		display: block!important;
+		left: 100%!important;
+	}
+	.dropdown-menu:hover{
+		position: absolute;
+		left: 0%;
 	}
 }
