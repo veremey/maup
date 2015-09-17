@@ -19,7 +19,7 @@ myCV:  [google drive](https://drive.google.com/open?id=1TK9mt61RCe0p68Jt_lBX8pRn
 
 ### Сайт в работе:
 
-[http://adeptco.kz/] (http://adeptco.kz/)
+[http://maup.com.ua/] (http://maup.com.ua/)
 
 ### Странички для просмотра:
 
