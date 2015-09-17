@@ -25,7 +25,7 @@ myCV:  [google drive](https://drive.google.com/open?id=1TK9mt61RCe0p68Jt_lBX8pRn
 
 * [index.html] (http://veremey.github.io/maup/index.html)
 
-* [about-us.html (http://veremey.github.io/maup/about-us.html)
+* [about-us.html] (http://veremey.github.io/maup/about-us.html)
 
 * [all_news.html] (http://veremey.github.io/maup/all_news.html)
 
