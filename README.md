@@ -45,4 +45,4 @@ myCV:  [google drive](https://drive.google.com/open?id=1TK9mt61RCe0p68Jt_lBX8pRn
 
 * [search.html] (http://veremey.github.io/maup/search.html)
 
-* [videoreportage.html] (http://veremey.github.io/maup/videoreportage.htmll)
+* [videoreportage.html] (http://veremey.github.io/maup/videoreportage.html)
